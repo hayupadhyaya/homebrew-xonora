@@ -5,7 +5,7 @@ class XonoraCli < Formula
   license :cannot_represent # proprietary, free for personal non-commercial use
 
   on_macos do
-    # Apple Silicon only — Intel macOS not shipped as a binary for v0.3.10.
+    # Apple Silicon only — Intel macOS is not supported in v0.3.10.
     on_arm do
       url "https://github.com/hayupadhyaya/xonora-cli/releases/download/cli-v#{version}/xonora-cli-v#{version}-macos-arm64.tar.gz"
       sha256 "e19cc2a9cd786d4688322d5291582d10f4dd8e7277315f39ec62e85dc50b61f3"
